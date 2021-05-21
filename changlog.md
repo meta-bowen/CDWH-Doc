@@ -1,0 +1,13 @@
+- Two secretKey formats are supported for registration and login
+- Added automated airdrops
+- Node initialization supports authentication/unauthentication modes, which correspond to different POC node declaration types
+- Miner node access process update: no longer rely on artificial access, by miners themselves access
+- Fixed a BUG where files saved via IPFS on UI side could not be downloaded
+- Added API for coin holding list
+
+- 注册和登录支持两种密钥格式
+- 新增自动化空投
+- 节点初始化支持鉴权/非鉴权模式，分别对应不同的POC节点声明类型
+- 矿工节点接入流程更新：不再依赖人工接入，由矿工自行接入
+- 修复UI端通过IPFS存入的文件无法下载的BUG
+- 新增持币列表API

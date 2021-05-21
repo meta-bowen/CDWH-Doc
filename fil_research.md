@@ -127,3 +127,17 @@ Filecoin Discover store是PB级别公共数据的目录（还在不断的增长�
 ## 分布式存储 VS 较传统云
 1. 分布式存储由供应关系决定定价 | 会间接造成定价不稳定
 
+## FIL安装补充
+直接按照官网在ubuntu系统上安装相应依赖包会出现相关依赖包无法下载，在安装依赖包之前执行以下操作：
+```
+sudo add-apt-repository "deb http://archive.ubuntu.com/ubuntu/ xenial-proposed restricted main multiverse universe"
+sudo apt-get update
+```
+
+下载Go源代码切换为国内镜像：
+```
+wget -c https://golang.org/dl/go1.16.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+// 替换为如下：
+wget -c https://mirrors.ustc.edu.cn/golang/go1.16.2.linux-amd64.tar.gz -O - | sudo tar -xz -C /usr/local
+```
+
